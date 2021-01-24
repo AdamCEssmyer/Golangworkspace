@@ -1,19 +1,19 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
-var y = 43
+var a int
+
+type hamburger int
+
+var b hamburger
 
 func main() {
-	//short declaration operator
-	//Declare a variable and Assign a Value
-	x := 42
-	fmt.Println(x)
-	fmt.Println(y)
-
-	foo()
-}
-
-func foo() {
-	fmt.Println("again:", y)
+	a = 42
+	b = 43
+	fmt.Println(a)
+	fmt.Println(b)
+	a = int(b)
 }
